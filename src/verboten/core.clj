@@ -70,7 +70,7 @@
 ;; Now it's essential to also know about calling an anonymous function directly.
 ;; In s-expressions, we always try to call the first item in function position.
 
-;; (+ 1 2 3 4) 'here the + symbol refers to an additon function so it's called
+;; (+ 1 2 3 4) 'here the + symbol refers to an addition function so it's called
 
 
 ;; Let's make an anonymous function (fn foo [bar] (+ bar 21))
@@ -98,7 +98,7 @@
 ;; isn't after the fact. It's hard and immediate.
 
 
-;; This provides some protection that a simple hashmap does not.
+;; This provides some protection that a simple hash map does not.
 ;; 1. You can see that I use a predicate to ensure only numbers are allowed
 ;; 2. I ONLY let you get to the member data correctly.
 ;; 3. I ONLY let you modify the member data correctly.
@@ -117,7 +117,7 @@
 ;; We bind it to the symbol frank and then call frank in function position with
 ;; the parameter :x. The case statement dispatches on :x and we get his x.
 
-;; Now the movement code allows some paraemeters. We still need old frank but
+;; Now the movement code allows some parameters. We still need old frank but
 ;; each movement code returns a fresh frank with updated values.
 
 ;; (let [frank (turtle 0 0 3.14)]
@@ -193,7 +193,7 @@
 
 ;; The world of OOP and Functional paradigms have more overlap that you may have
 ;; expected. This is because purists often promote wrong ideals based on limited
-;; experiance. The model above is taken from Scheme and has been adapted to be
+;; experience. The model above is taken from Scheme and has been adapted to be
 ;; a function only simulation of an object. The Scheme model would also provide
 ;; some mutators for the closed over data. You could do that too by making them
 ;; atoms to begin with.
