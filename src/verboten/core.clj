@@ -29,9 +29,9 @@
                   (case slot
                     :x (turtle value y direction)
                     :y (turtle x value direction)
-                    :direction (turtle x y value))
-                  ;; Error, bad accessor
-                  (acc-err value))
+                    :direction (turtle x y value)
+                    ;; Error, bad accessor
+                    (acc-err value)))
         :debug (fn []
                  (cl-format true "Turtle: x: ~a, y: ~a, direction: ~a"
                             x y direction))
